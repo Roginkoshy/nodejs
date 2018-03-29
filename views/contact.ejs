@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funny site</title>
+    <style>
+    	body{
+    		background:skyblue;
+    	}
+    </style>
+</head>
+<body>
+<% include partials/nav.ejs %>
+<h1 style="color:white;text-align: center;">Website funny!</h1>
+<p style="color:white;text-align: center;">You can contact me! Duh!</p>
+<!--  <p style="color:white;text-align: center;"><%= qs.dept %></p>
+<p style="color:white;text-align: center;"><%= qs.person %></p>
+-->
+<form id='contact_form' method="POST" action="/contact">
+  <center>
+	<label for="who">Who are you?</label>
+	<br>
+	<input type="text" name="who" value="<%= qs.person %>">
+	<br>
+    <br>
+	<label for="dept">Department</label>
+	<br>
+    <input type="text" name="dept" value="<%= qs.dept%>">
+	<br>
+    <br>
+	<label for="Email">Email</label>
+	<br>
+	<input type="text" name="email" >
+	<br>
+	<br>
+	<input type="submit">
+	</center>
+</form>
+
+</body>
+</html>

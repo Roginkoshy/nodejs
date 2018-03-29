@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funny site</title>
+    <style>
+    	body{
+    		background:skyblue;
+    	}
+    </style>
+</head>
+<body>
+<h1 style="color:white;text-align: center;">This is the profile of <%= person %>.</h1>
+<p style="color:white;text-align: center;"><strong>Age:</strong><%= data.age %></p>
+<p style="color:white;text-align: center;"><strong>Job:</strong><%= data.job %></p>
+<h2 style="color:white;text-align: center;">Hobbies</h2>
+<ul style="color:white;text-align: center;">
+	<%data.hobbies.forEach(function(item){  %>
+    <li style="list-style: none;"><%= item %></li>
+
+	<% });  %>
+</ul>
+</body>
+</html>
